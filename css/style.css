@@ -42,6 +42,7 @@ h1,h2,h3,h4,h5,h6,p,a{
 .header{
 	height: 100px;
 	background: #373c3f;
+	text-transform: uppercase;
 }
 .logo{
 	float: left;
@@ -51,17 +52,18 @@ h1,h2,h3,h4,h5,h6,p,a{
 }
 .logo a{
 	color: #fff;
-	margin-right: 15px;
+	margin: 0 15px 0 55px;
 }
 .header-nav{
 	float: left;
 	margin-top: 40px;
+	
 }
 .header-nav li{
 	display: inline-block;
 	margin: 0 15px;
 	font-size: 15px;
-	
+
 }
 .header-nav li a{
 	color: #fff;
@@ -72,13 +74,47 @@ h1,h2,h3,h4,h5,h6,p,a{
 .inner-block{
 	height: 580px;
 	background: url(../img/inner-bg.jpg);
+	color: #fff;
+	padding: 205px 0 0 80px;
+	position: relative;
 }
-/*.img-row{
+.inner-block h1{
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 1.5;
+	margin-bottom: 50px;
+}
+.inner-block span{
+	display: inline-block;
+	color: #a8d4de;
+	font-size: 20px;
+}
+.arrow::before, .arrow::after{
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 4px;
+	background: #fff;
+	border-radius: 2px;
+	position: absolute;
+}
+.arrow::before{
+    top: 373px;
+    left: 436px;
+    transform: rotate(-38deg);
+}
+
+.arrow::after{
+	bottom: 214px;
+    right: 568px;
+    transform: rotate(-154deg);
+}
+.img-gallery{
 	overflow: hidden;
-}*/
+}
 .img-block{
 	float: left;
-	line-height: ;
+	line-height: 0;
 }
 .img-block img{
 	width: 100%;
@@ -93,6 +129,64 @@ h1,h2,h3,h4,h5,h6,p,a{
 	float: left;
 	width: 30%;
 	height: 221px;
-	background: violet;
+	background: #bc3184;
+	position: relative;
+}
+.arrow-big::before, .arrow-big::after{
+	content: '';
+	display: inline-block;
+	width: 45px;
+	height: 6px;
+	background: #fff;
+	border-radius: 2px;
+	position: absolute;
+	align-items: center;
+}
+.arrow-big::before{
+    top: 122px;
+    left: 136px;
+    transform: rotate(-31deg);
+}
+
+.arrow-big::after{
+    bottom: 117px;
+    right: 126px;
+    transform: rotate(-151deg);
+}
+
+
+.text-area{
+	margin-top: 1px;
+	height: 565px;
+	background: #ebebeb;
+	padding: 55px 80px 180px;
+	width: 100%;
+}
+.text-area a{
+	font-size: 30px;
+}
+.text-area p{
+	display: inline-block;
+	font-size: 14px;
+	column-count: 2;
+	column-gap: 55px;
+	margin-top: 35px;
 }
 /*Main END*/
+
+/*Media*/
+/*from 0 to 767*/
+@media (max-width: 767px){
+
+}
+@media (max-width: 767px){
+	
+}
+
+/*from 767 and up*/
+@media (min-width: 767px){
+
+}
+@media (min-width: 767px){
+
+}
