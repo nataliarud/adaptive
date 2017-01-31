@@ -43,6 +43,7 @@ h1,h2,h3,h4,h5,h6,p,a{
 	height: 100px;
 	background: #373c3f;
 	text-transform: uppercase;
+	position: relative;
 }
 .logo{
 	float: left;
@@ -68,6 +69,9 @@ h1,h2,h3,h4,h5,h6,p,a{
 .header-nav li a{
 	color: #fff;
 }
+.slicknav_menu {
+	display:none;
+}
 /*Header  END*/
 
 /*Main START*/
@@ -76,7 +80,6 @@ h1,h2,h3,h4,h5,h6,p,a{
 	background: url(../img/inner-bg.jpg);
 	color: #fff;
 	padding: 205px 0 0 80px;
-	position: relative;
 }
 .inner-block h1{
 	font-size: 36px;
@@ -88,26 +91,6 @@ h1,h2,h3,h4,h5,h6,p,a{
 	display: inline-block;
 	color: #a8d4de;
 	font-size: 20px;
-}
-.arrow::before, .arrow::after{
-	content: '';
-	display: inline-block;
-	width: 20px;
-	height: 4px;
-	background: #fff;
-	border-radius: 2px;
-	position: absolute;
-}
-.arrow::before{
-    top: 373px;
-    left: 436px;
-    transform: rotate(-38deg);
-}
-
-.arrow::after{
-	bottom: 214px;
-    right: 568px;
-    transform: rotate(-154deg);
 }
 .img-gallery{
 	overflow: hidden;
@@ -132,35 +115,13 @@ h1,h2,h3,h4,h5,h6,p,a{
 	background: #bc3184;
 	position: relative;
 }
-.arrow-big::before, .arrow-big::after{
-	content: '';
-	display: inline-block;
-	width: 45px;
-	height: 6px;
-	background: #fff;
-	border-radius: 2px;
-	position: absolute;
-	align-items: center;
-}
-.arrow-big::before{
-    top: 122px;
-    left: 136px;
-    transform: rotate(-31deg);
-}
-
-.arrow-big::after{
-    bottom: 117px;
-    right: 126px;
-    transform: rotate(-151deg);
-}
-
-
 .text-area{
 	margin-top: 1px;
 	height: 565px;
 	background: #ebebeb;
 	padding: 55px 80px 180px;
 	width: 100%;
+	overflow: hidden;
 }
 .text-area a{
 	font-size: 30px;
@@ -175,18 +136,58 @@ h1,h2,h3,h4,h5,h6,p,a{
 /*Main END*/
 
 /*Media*/
-/*from 0 to 767*/
-@media (max-width: 767px){
-
+@media (max-width: 1059px){
+	.container{
+		width: 750px;
+	}
+	.link{
+		height: 162px;
+	}
 }
 @media (max-width: 767px){
-	
+	.container{
+		width: 620px;
+	}
+	.header{
+		height: 70px;
+	}
+	.link{
+		height: 133px;
+	}
+	.img-block.smw100{
+		width: 100%;
+	}
+	.slicknav_menu{
+		display: block;
+		float: right;
+		height: 70px;
+	}
+	.slicknav_nav{
+		left: 5px;
+  		top: 70px;
+	}
+	.header-nav{
+		display: none;
+	}
 }
-
-/*from 767 and up*/
-@media (min-width: 767px){
-
-}
-@media (min-width: 767px){
-
+@media (max-width: 639px){
+	.container{
+		width: 320px;
+	}
+	.header{
+		height: 40px;
+	}
+	.link{
+		height: 69px;
+	}
+	.slicknav_menu{
+		height: 40px;
+	}
+	.slicknav_menu .slicknav_no-text{
+		margin: 0 10px 0 0;
+	}
+	.slicknav_nav{
+		left: 5px;
+  		top: 40px;
+	}
 }
